@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <% @circuits.each do |circuit| %>
+      <div class="col-sm-4 circuit">
+        <div class="row">
+          <div class="col-sm-4">
+            <% if circuit.image.blank? %>
+              <div class="empty">
+                <i class="fa fa-2x fa-image"></i>
+              </div>
+            <% else %>
+              <img src="<%= circuit.image_url(:standard) %>" class="img-fluid" />
+            <% end %>
+          </div>
+          <div class="col-sm-8">
+            <span class="name">
+              <%= circuit.name %>
+            </span>
+            <span class="code">
+              <%= circuit.code %>
+            </span>
+            <a href="<%= show_circuit_path(circuit.code) %>">Voir</a>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
