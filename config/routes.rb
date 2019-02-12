@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   namespace :slash_admin, path: 'admin' do
     scope module: 'models' do
       resources :circuits
+      resources :constructors
+      resources :drivers
     end
   end
 

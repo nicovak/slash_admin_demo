@@ -1,10 +1,10 @@
-class CreateCircuits < ActiveRecord::Migration[5.1]
+class CreateConstructors < ActiveRecord::Migration[5.2]
   def change
-    create_table :circuits do |t|
+    create_table :constructors do |t|
       t.string :code, unique: true, index: true, null: false
       t.string :name, null: false
+      t.string :nationality, null: false
       t.string :url
-      t.jsonb :google_map, index: { using: :gin }
       t.string :image
       t.timestamps
     end

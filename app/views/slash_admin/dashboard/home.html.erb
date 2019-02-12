@@ -1,0 +1,66 @@
+<% page_title('Dashboard') %>
+<% page_sub_title("vous permet d'administrer votre application Formule 1") %>
+
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="dashboard-panel">
+      <%= statistic_progress_tile(title: 'Circuits', number: number_with_delimiter(Circuit.count, delimiter: ' '), icon: 'flag', percent: ((Circuit.count.to_f / 200) * 100).round, progress_label: 'progression', status: 'success') %>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="dashboard-panel">
+      <%= statistic_progress_tile(title: 'Constructors', number: number_with_delimiter(Constructor.count, delimiter: ' '), icon: 'flag', percent: ((Constructor.count.to_f / 300) * 100).round, progress_label: 'progression', status: 'success') %>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+    <div class="dashboard-panel">
+      <%= statistic_progress_tile(title: 'Drivers', number: number_with_delimiter(Driver.count, delimiter: ' '), icon: 'flag', percent: ((Driver.count.to_f / 1000) * 100).round, progress_label: 'progression', status: 'success') %>
+    </div>
+  </div>
+</div>
+
+<div class="separator"></div>
+
+<div data-turbolinks="false">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2 class="dashboard-title">Circuits MAP</h2>
+      <div id="map" style="height: 500px; width: 100%;"></div>
+
+      <script>
+        function initMap() {
+
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 3,
+            center: {lat: 48.864716, lng: 2.349014}
+          });
+
+          // Add some markers to the map.
+          // Note: The code uses the JavaScript Array.prototype.map() method to
+          // create an array of markers based on a given "locations" array.
+          // The map() method here has nothing to do with the Google Maps API.
+          var markers = locations.map(function (location, i) {
+            return new google.maps.Marker({
+              position: location,
+            });
+          });
+
+          // Add a marker clusterer to manage the markers.
+          var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+        }
+
+        var locations = [
+          <% Circuit.all.each do |b| %>
+          {lat: <%= b.google_map['location']['lat'] %>, lng: <%= b.google_map['location']['lng'] %>},
+          <% end %>
+        ]
+      </script>
+      <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
+      </script>
+      <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAP_KEY'] %>&callback=initMap">
+      </script>
+    </div>
+  </div>
+</div>

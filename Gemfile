@@ -1,19 +1,19 @@
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?('/')
   "https://github.com/#{repo_name}.git"
 end
-
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-# Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'pg'
+gem 'passenger', require: 'phusion_passenger/rack_handler'
+
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', require: false
+gem 'sassc-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -39,13 +39,12 @@ gem 'bootsnap', require: false
 # Back
 gem 'mini_magick'
 gem 'carrierwave'
-gem 'slash_admin', git: 'https://github.com/nicovak/slash_admin.git', ref: '2f790db'
+gem 'slash_admin', git: 'https://github.com/nicovak/slash_admin.git', ref: '41ee7ad'
 # gem 'slash_admin', path: '../slash_admin'
 
 # Front
-gem 'bootstrap', '~> 4.1.0'
-gem 'jquery-rails'
-gem 'font-awesome-rails'
+gem 'bootstrap', '~> 4.2'
+gem 'autoprefixer-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -53,6 +52,9 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem 'pry-rails'
+  gem 'annotate'
+  gem 'derailed_benchmarks'
 end
 
 group :development do
@@ -62,6 +64,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
+  gem 'better_errors'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

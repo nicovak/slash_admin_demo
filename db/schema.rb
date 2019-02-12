@@ -10,19 +10,48 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_02_25_170608) do
+ActiveRecord::Schema.define(version: 2019_02_05_103347) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "circuits", force: :cascade do |t|
     t.string "code", null: false
     t.string "name", null: false
-    t.text "location"
+    t.string "url"
+    t.jsonb "google_map"
+    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "image"
     t.index ["code"], name: "index_circuits_on_code"
+    t.index ["google_map"], name: "index_circuits_on_google_map", using: :gin
   end
 
-  create_table "slash_admin_admins", force: :cascade do |t|
+  create_table "constructors", force: :cascade do |t|
+    t.string "code", null: false
+    t.string "name", null: false
+    t.string "nationality", null: false
+    t.string "url"
+    t.string "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["code"], name: "index_constructors_on_code"
+  end
+
+  create_table "drivers", force: :cascade do |t|
+    t.string "code"
+    t.string "first_name", null: false
+    t.string "last_name", null: false
+    t.string "nationality", null: false
+    t.date "date_of_birth", null: false
+    t.string "url"
+    t.string "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["code"], name: "index_drivers_on_code"
+  end
+
+  create_table "slash_admin_admins", id: :serial, force: :cascade do |t|
     t.string "username", default: "", null: false
     t.string "email", default: "", null: false
     t.string "password_digest", default: "", null: false

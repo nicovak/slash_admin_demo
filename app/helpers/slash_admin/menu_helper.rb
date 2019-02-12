@@ -12,7 +12,9 @@ module SlashAdmin
           title: 'Formule 1',
           icon: 'icon-speedometer',
           sub_menu: [
-            { model: Circuit, icon: 'fa fa-flag-checkered' },
+            { model: Circuit, icon: 'fas fa-flag-checkered' },
+            { model: Constructor, icon: 'fas fa-industry' },
+            { model: Driver, icon: 'fas fa-user-circle' },
           ],
         },
       ]
