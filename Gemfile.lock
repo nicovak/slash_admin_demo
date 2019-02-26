@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/nicovak/slash_admin.git
-  revision: 41ee7ad618cf8ccfb2c4abc3b29a73acb01384ff
-  ref: 41ee7ad
+  revision: 4ddb111752c7410e068a7a96ae8f4e83e36331d3
+  ref: 4ddb111
   specs:
     slash_admin (0.1.0)
       bcrypt

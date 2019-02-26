@@ -39,7 +39,7 @@ gem 'bootsnap', require: false
 # Back
 gem 'mini_magick'
 gem 'carrierwave'
-gem 'slash_admin', git: 'https://github.com/nicovak/slash_admin.git', ref: '41ee7ad'
+gem 'slash_admin', git: 'https://github.com/nicovak/slash_admin.git', ref: '4ddb111'
 # gem 'slash_admin', path: '../slash_admin'
 
 # Front

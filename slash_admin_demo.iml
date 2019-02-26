@@ -36,17 +36,17 @@
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.6.0, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="annotate (v2.7.4, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v9.0.0, rbenv: 2.5.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v9.4.7, rbenv: 2.5.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v9.4.9, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.12, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="benchmark-ips (v2.7.2, rbenv: 2.5.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="better_errors (v2.5.0, rbenv: 2.5.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="better_errors (v2.5.1, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bindex (v0.5.0, rbenv: 2.5.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.3.2, rbenv: 2.5.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bootstrap (v4.2.1, rbenv: 2.5.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.4.1, rbenv: 2.5.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bootstrap (v4.3.1, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootstrap-datepicker-rails (v1.8.0.1, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.3, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.17.2, rbenv: 2.5.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="byebug (v10.0.2, rbenv: 2.5.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="byebug (v11.0.0, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cancancan (v2.3.0, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v2.18.0, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="carrierwave (v1.3.1, rbenv: 2.5.1) [gem]" level="application" />
@@ -91,7 +91,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v3.2.2, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types-data (v3.2018.0812, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mimemagic (v0.3.3, rbenv: 2.5.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="mini_magick (v4.9.2, rbenv: 2.5.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_magick (v4.9.3, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.0.1, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.4.0, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.11.3, rbenv: 2.5.1) [gem]" level="application" />
@@ -100,7 +100,7 @@
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.13.1, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.3.1, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.10.1, rbenv: 2.5.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="passenger (v6.0.1, rbenv: 2.5.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="passenger (v6.0.2, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v1.1.4, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="popper_js (v1.14.5, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pry (v0.12.2, rbenv: 2.5.1) [gem]" level="application" />
@@ -125,7 +125,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sassc-rails (v2.1.0, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selectize-rails (v0.12.6, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v3.141.0, rbenv: 2.5.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="slash_admin (v0.1.0@47b9c0, rbenv: 2.5.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="slash_admin (v0.1.0@41ee7a, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring (v2.0.2, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring-watcher-listen (v2.0.1, rbenv: 2.5.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v3.7.2, rbenv: 2.5.1) [gem]" level="application" />
