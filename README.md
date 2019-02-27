@@ -3,15 +3,15 @@
 Require `pg` and env vars
 
 ```
-ENV["POSTGRES_USERNAME"]
-ENV["POSTGRES_PASSWORD"]
-ENV["POSTGRES_PORT"]
+ENV['POSTGRES_USERNAME']
+ENV['POSTGRES_PASSWORD']
+ENV['POSTGRES_PORT']
 ```
 
 For google_map
 
 ```
-ENV["GOOGLE_MAP_KEY"]
+ENV['GOOGLE_MAP_KEY']
 ```
 
 # Start up

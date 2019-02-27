@@ -9,7 +9,7 @@ module SlashAdmin
           icon: 'icon-home',
         },
         {
-          title: 'Formule 1',
+          title: 'Formula 1',
           icon: 'icon-speedometer',
           sub_menu: [
             { model: Circuit, icon: 'fas fa-flag-checkered' },

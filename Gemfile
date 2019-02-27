@@ -9,7 +9,7 @@ end
 gem 'rails', '~> 5.2.0'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
-gem 'passenger', require: 'phusion_passenger/rack_handler'
+gem 'puma'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', require: false
@@ -39,7 +39,7 @@ gem 'bootsnap', require: false
 # Back
 gem 'mini_magick'
 gem 'carrierwave'
-gem 'slash_admin', git: 'https://github.com/nicovak/slash_admin.git', ref: '4ddb111'
+gem 'slash_admin', git: 'https://github.com/nicovak/slash_admin.git', ref: 'e21219b'
 # gem 'slash_admin', path: '../slash_admin'
 
 # Front
@@ -52,19 +52,17 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'pry-rails'
   gem 'annotate'
   gem 'derailed_benchmarks'
 end
 
 group :development do
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
+  gem 'pry-rails'
   gem 'better_errors'
 end
 
