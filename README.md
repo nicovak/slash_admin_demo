@@ -8,6 +8,9 @@ Demo of [slash_admin](https://github.com/nicovak/slash_admin) on the theme of Fo
 
 [LIVE RUNNING](https://slashadmin.herokuapp.com/)
 
+User: `admin`  
+Password: `admin@admin`
+
 #### Screenshots
 
 ##### Login
@@ -37,20 +40,16 @@ ENV['GOOGLE_MAP_KEY']
 
 ## Start up
 
-Install gems
-
+Install gems  
 `bundle install`
 
-Initialize database
-
+Initialize database  
 `rails db:migrate`
 
-Seed with data
-
+Seed with data  
 `rails db:seed`
 
-Import data from CSV
-
+Import data from CSV  
 `rails import:data`
 
 ### Documentation
@@ -58,6 +57,7 @@ Import data from CSV
 [Read the docs](https://github.com/nicovak/slash_admin/tree/master/docs/index.md)
 
 ## Contributing
+
 Coming soon.
 
 ## License
