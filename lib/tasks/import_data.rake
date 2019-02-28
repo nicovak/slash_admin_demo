@@ -1,4 +1,6 @@
 require 'csv'
+require 'json'
+require 'net/http'
 
 prefix = "#{Rails.root}/lib/tasks/data/"
 path_files = {
