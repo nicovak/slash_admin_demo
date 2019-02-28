@@ -6,10 +6,13 @@
 
 Demo of [slash_admin](https://github.com/nicovak/slash_admin) on the theme of Formula 1 🏎️
 
-[LIVE RUNNING](https://slashadmin.herokuapp.com/)
+🚀 [Live running](https://slashadmin.herokuapp.com/)
 
-User: `admin`  
-Password: `admin@admin`
+User  
+`admin`
+
+Password  
+`admin@admin`
 
 #### Screenshots
 
