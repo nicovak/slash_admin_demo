@@ -38,7 +38,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', require: false
 
 # Back
-gem 'mini_magick'
+gem 'mini_magick', '>= 4.9.4'
 gem 'carrierwave'
 gem 'slash_admin', git: 'https://github.com/nicovak/slash_admin.git', ref: 'ae7ab01'
 # gem 'slash_admin', path: '../slash_admin'
