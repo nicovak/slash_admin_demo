@@ -7,7 +7,7 @@ git_source(:github) do |repo_name|
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.0'
+gem 'rails', '~> 6.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 gem 'puma'
@@ -40,7 +40,7 @@ gem 'bootsnap', require: false
 # Back
 gem 'mini_magick'
 gem 'carrierwave'
-gem 'slash_admin', git: 'https://github.com/nicovak/slash_admin.git', ref: '8b5e09e'
+gem 'slash_admin', '~> 1.0'
 # gem 'slash_admin', path: '../slash_admin'
 
 # Front
