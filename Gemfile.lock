@@ -328,7 +328,7 @@ DEPENDENCIES
   rails (~> 6.0.0)
   sass-rails
   sassc-rails
-  selenium-webdriver
+  selenium-webdriver (>= 3.142.3)
   slash_admin (~> 1.0)
   spring
   spring-watcher-listen (~> 2.0.0)
