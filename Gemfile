@@ -10,8 +10,7 @@ gem 'pg'
 gem 'puma'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', require: false
-gem 'sassc-rails'
+gem "sass-rails", "~> 5"
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -37,11 +36,11 @@ gem 'bootsnap', require: false
 # Back
 gem 'mini_magick'
 gem 'carrierwave'
-gem 'slash_admin', '~> 1.0'
-# gem 'slash_admin', path: '../slash_admin'
+# gem 'slash_admin', '~> 1.0'
+gem 'slash_admin', path: '../slash_admin'
 
 # Front
-gem 'bootstrap', '~> 4.2'
+gem "bootstrap", "~> 4.4.1"
 gem 'autoprefixer-rails'
 
 group :development, :test do
