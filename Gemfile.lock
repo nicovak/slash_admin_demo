@@ -1,28 +1,3 @@
-PATH
-  remote: ../slash_admin
-  specs:
-    slash_admin (1.2.0)
-      bcrypt
-      bootstrap (~> 4.3)
-      cancancan
-      chart-js-rails
-      chartkick
-      cocoon
-      datetime_picker_rails
-      groupdate
-      highcharts-rails
-      http_accept_language
-      i18n-js
-      jquery-minicolors-rails
-      jquery-rails
-      js-routes
-      momentjs-rails
-      pagy
-      rails (~> 6.0)
-      ruby_identicon
-      sweetalert-rails
-      tether-rails
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -266,11 +241,32 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
+    slash_admin (1.2.2)
+      bcrypt
+      bootstrap (~> 4.3)
+      cancancan
+      chart-js-rails
+      chartkick
+      cocoon
+      datetime_picker_rails
+      groupdate
+      highcharts-rails
+      http_accept_language
+      i18n-js
+      jquery-minicolors-rails
+      jquery-rails
+      js-routes
+      momentjs-rails
+      pagy
+      rails (~> 6.0)
+      ruby_identicon
+      sweetalert-rails
+      tether-rails
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
       spring (>= 1.2, < 3.0)
-    sprockets (3.7.2)
+    sprockets (4.0.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-rails (3.2.1)
@@ -323,7 +319,7 @@ DEPENDENCIES
   rails (~> 6.0.0)
   sassc-rails
   selenium-webdriver (>= 3.142.3)
-  slash_admin!
+  slash_admin
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
