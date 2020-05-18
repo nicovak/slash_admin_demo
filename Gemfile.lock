@@ -238,7 +238,7 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
-    slash_admin (1.3.3)
+    slash_admin (1.3.4)
       bcrypt
       bootstrap (~> 4.3)
       cancancan
