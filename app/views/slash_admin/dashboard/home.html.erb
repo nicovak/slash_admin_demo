@@ -51,8 +51,10 @@
         }
 
         var locations = [
-          <% Circuit.all.each do |b| %>
-          {lat: <%= b.google_map['location']['lat'] %>, lng: <%= b.google_map['location']['lng'] %>},
+          <% Circuit.all.each do |c| %>
+            <% if c.google_map.present?  %>
+            { lat: <%= c.google_map['location']['lat'] %>, lng: <%= c.google_map['location']['lng'] %> },
+            <% end %>
           <% end %>
         ]
       </script>
