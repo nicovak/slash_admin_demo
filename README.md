@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="250" src="https://i.imgur.com/Rok5Ocf.png" />
+  <img width="250" src="https://i.imgur.com/mm9gXtL.png" />
 </p>
 
 # SlashAdmin Demo
@@ -8,22 +8,22 @@ Demo of [slash_admin](https://github.com/nicovak/slash_admin) on the theme of Fo
 
 🚀 [Live running](https://slashadmin.herokuapp.com/)
 
-User  
+User
 `admin`
 
-Password  
+Password
 `admin@admin`
 
 #### Screenshots
 
 ##### Login
-![Image of Login screen](https://i.imgur.com/MJerQSR.jpg)
+![Image of Login screen](https://i.imgur.com/ftwC0rF.png)
 ##### Dashboard
-![Image of Dashboard](https://i.imgur.com/0g3wSjw.png)
+![Image of Dashboard](https://i.imgur.com/3JzkvoT.png)
 ##### List
-![Image of List](https://i.imgur.com/s1egSS3.png)
+![Image of List](https://i.imgur.com/y6Vz6S1.png)
 ##### Edit / Create
-![Image of Create / Edit](https://i.imgur.com/wf72pZz.png)
+![Image of Create / Edit](https://i.imgur.com/S2QqHWF.png)
 
 ### Installation
 
@@ -43,16 +43,16 @@ ENV['GOOGLE_MAP_KEY']
 
 ## Start up
 
-Install gems  
+Install gems
 `bundle install`
 
-Initialize database  
+Initialize database
 `rails db:migrate`
 
-Seed with data  
+Seed with data
 `rails db:seed`
 
-Import data from CSV  
+Import data from CSV
 `rails import:data`
 
 ### Documentation
@@ -61,9 +61,13 @@ Import data from CSV
 
 ## Contributing
 
-Coming soon.
+Bug reports and pull requests are welcome on GitHub at https://github.com/nicovak/slash_admin. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
+
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 
-Data from [Eargast](http://ergast.com/mrd/)
+## Code of Conduct
+
+Everyone interacting in the slash_admin project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/nicovak/slash_admin/tree/master/CODE_OF_CONDUCT.md).
+
