@@ -14,4 +14,5 @@
 
 class Circuit < ApplicationRecord
   mount_uploader :image, ImageUploader
+  validates_presence_of :code, :name, :google_map
 end

@@ -14,4 +14,5 @@
 
 class Constructor < ApplicationRecord
   mount_uploader :image, ImageUploader
+  validates_presence_of :code, :name, :nationality
 end

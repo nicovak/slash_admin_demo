@@ -16,8 +16,9 @@
 
 class Driver < ApplicationRecord
   mount_uploader :image, ImageUploader
+  validates_presence_of :first_name, :last_name, :nationality, :date_of_birth
 
   def name
-    first_name + ' ' + last_name
+    first_name + " " + last_name
   end
 end
