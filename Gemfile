@@ -34,7 +34,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # Back
 gem 'mini_magick'
 gem 'carrierwave'
-gem 'slash_admin'
+gem 'slash_admin', '>= 1.3.4'
 # gem 'slash_admin', path: '../slash_admin'
 
 # Front
