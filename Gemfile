@@ -33,7 +33,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 # Back
 gem 'mini_magick'
-gem 'carrierwave'
+gem 'carrierwave', '>= 2.1.1'
 gem 'slash_admin', '>= 1.3.4'
 # gem 'slash_admin', path: '../slash_admin'
 
@@ -60,7 +60,7 @@ end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
+  gem 'capybara', '>= 3.32.2'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
