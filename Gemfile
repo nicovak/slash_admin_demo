@@ -55,7 +55,7 @@ group :development do
   gem 'annotate', '>= 3.1.1'
   gem 'derailed_benchmarks'
   gem 'pry-rails'
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
 end
 
 group :test do
