@@ -7,7 +7,7 @@ ruby "2.7.3"
 gem "rails", "~> 6.1.4.1"
 # Use sqlite3 as the database for Active Record
 gem "pg"
-gem "puma"
+gem "puma", ">= 5.5.1"
 
 # Use SCSS for stylesheets
 gem "sass-rails"
